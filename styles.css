@@ -360,7 +360,6 @@
       position:fixed;inset:var(--header-h) 0 0 0;
       flex-direction:column;gap:0;
       background:var(--bg);
-      padding:1rem 1.5rem 2rem;
       transform:translateY(-8px);opacity:0;pointer-events:none;
       transition:opacity .25s ease,transform .25s ease;
       font-size:.95rem;
@@ -369,7 +368,9 @@
       opacity:1;transform:translateY(0);pointer-events:auto;
     }
     .nav-links a{
-      padding:1.05rem 0;border-bottom:1px solid var(--border);width:100%;
+      padding: 1rem 1.5rem 1rem;
+      background-color: darkslategray;
+      border-bottom:1px solid var(--border);width:100%;
     }
     .nav-links a::after{display:none;}
     .hamburger{display:block;}
