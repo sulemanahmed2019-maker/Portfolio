@@ -265,7 +265,12 @@
     text-transform:uppercase;letter-spacing:.05em;margin-bottom:.4rem;
   }
   .timeline-role{font-size:1.15rem;}
-  .timeline-company{color:var(--text);font-weight:600;font-size:.92rem;margin-bottom:.9rem;}
+  .timeline-company{
+    text-decoration: underline;
+    color:var(--text);
+    font-weight:600;
+    font-size:.92rem;
+    margin-bottom:.9rem;}
   .timeline-item ul{margin-top:.4rem;}
   .timeline-item li{
     list-style:disc;margin-left:1.2rem;color:var(--text-dim);margin-bottom:.5rem;font-size:.95rem;
