@@ -265,7 +265,7 @@
     text-transform:uppercase;letter-spacing:.05em;margin-bottom:.4rem;
   }
   .timeline-role{font-size:1.15rem;}
-  .timeline-company{color:var(--text-dim);font-size:.92rem;margin-bottom:.9rem;}
+  .timeline-company{color:var(--text);font-weight:600;font-size:.92rem;margin-bottom:.9rem;}
   .timeline-item ul{margin-top:.4rem;}
   .timeline-item li{
     list-style:disc;margin-left:1.2rem;color:var(--text-dim);margin-bottom:.5rem;font-size:.95rem;
@@ -341,6 +341,26 @@
   .submit-btn:disabled{opacity:.6;cursor:not-allowed;transform:none;}
 
   /* ============ Footer ============ */
+  /* ============ Floating CV download button ============ */
+  .cv-download{
+    position:fixed;bottom:1.75rem;right:1.75rem;z-index:150;
+    display:inline-flex;align-items:center;gap:.6rem;
+    padding:.85rem 1.4rem;background:var(--accent);color:#04150d;
+    font-weight:600;font-size:.88rem;border-radius:999px;
+    box-shadow:0 14px 30px -10px rgba(0,0,0,.55);
+    transition:transform .25s ease,box-shadow .25s ease,background .25s ease,opacity .25s ease;
+  }
+  .cv-download:hover{
+    transform:translateY(-3px);background:var(--accent-strong);
+    box-shadow:0 20px 40px -12px rgba(0,0,0,.65);
+  }
+  body.menu-open .cv-download{opacity:0;pointer-events:none;}
+
+  @media (max-width:480px){
+    .cv-download{padding:.9rem;border-radius:50%;bottom:1.25rem;right:1.25rem;}
+    .cv-download span{display:none;}
+  }
+
   .site-footer{border-top:1px solid var(--border);padding:2.5rem 0;}
   .footer-row{
     display:flex;justify-content:space-between;align-items:center;
@@ -368,7 +388,7 @@
       opacity:1;transform:translateY(0);pointer-events:auto;
     }
     .nav-links a{
-      padding: 1rem 1.5rem 1rem;
+      padding: 1rem;
       background-color: darkslategray;
       border-bottom:1px solid var(--border);width:100%;
     }

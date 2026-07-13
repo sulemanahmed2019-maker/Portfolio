@@ -21,12 +21,14 @@
     navLinks.classList.remove('is-open');
     hamburgerBtn.setAttribute('aria-expanded', 'false');
     header.classList.remove('menu-open');
+    document.body.classList.remove('menu-open');
     document.body.style.overflow = '';
   }
   function toggleMenu(){
     const isOpen = navLinks.classList.toggle('is-open');
     hamburgerBtn.setAttribute('aria-expanded', String(isOpen));
     header.classList.toggle('menu-open', isOpen);
+    document.body.classList.toggle('menu-open', isOpen);
     document.body.style.overflow = isOpen ? 'hidden' : '';
   }
   hamburgerBtn.addEventListener('click', toggleMenu);
@@ -111,7 +113,7 @@
   const formStatus = document.getElementById('formStatus');
 
   // TODO: replace with your real Formspree endpoint (or another form backend)
-  const FORM_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+  const FORM_ENDPOINT = 'https://formspree.io/f/mkoldzgd';
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
