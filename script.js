@@ -107,6 +107,37 @@
   // ---------- Footer year ----------
   document.getElementById('year').textContent = new Date().getFullYear();
 
+  // ---------- Skills tabs ----------
+  const skillTabs = Array.from(document.querySelectorAll('.skills-tab'));
+  const skillPanels = Array.from(document.querySelectorAll('.skill-group'));
+
+  if (skillTabs.length && skillPanels.length){
+    skillTabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        const targetId = tab.getAttribute('aria-controls');
+        const targetPanel = document.getElementById(targetId);
+
+        if (!targetPanel) return;
+
+        skillTabs.forEach((item) => {
+          const isActive = item === tab;
+          item.classList.toggle('is-active', isActive);
+          item.setAttribute('aria-selected', String(isActive));
+        });
+
+        skillPanels.forEach((panel) => {
+          const isActivePanel = panel === targetPanel;
+          panel.classList.toggle('is-active', isActivePanel);
+          if (isActivePanel) {
+            panel.removeAttribute('hidden');
+          } else {
+            panel.setAttribute('hidden', 'true');
+          }
+        });
+      });
+    });
+  }
+
   // ---------- Contact form ----------
   const form = document.getElementById('contactForm');
   const submitBtn = document.getElementById('submitBtn');

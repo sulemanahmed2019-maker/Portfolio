@@ -130,10 +130,6 @@
             <div class="stat-num" data-target="8">0</div>
             <div class="stat-label">App types &amp; platforms tested</div>
           </div>
-          <div class="stat">
-            <div class="stat-num" data-target="5">0</div>
-            <div class="stat-label">Third-party integrations tested</div>
-          </div>
         </div>
       </div>
     </div>
@@ -148,9 +144,15 @@
         <p class="section-sub">Manual testing, with automation skills currently in progress.</p>
       </div>
 
-      <div>
-        <div class="skill-group reveal">
-          <h3>Test design &amp; execution</h3>
+      <div class="skills-tabs reveal">
+        <div class="skills-tab-list" role="tablist" aria-label="Skill categories">
+          <button class="skills-tab is-active" role="tab" aria-selected="true" aria-controls="tab-design" id="tab-design-trigger">Test design</button>
+          <button class="skills-tab" role="tab" aria-selected="false" aria-controls="tab-platforms" id="tab-platforms-trigger">Platforms</button>
+          <button class="skills-tab" role="tab" aria-selected="false" aria-controls="tab-api" id="tab-api-trigger">API &amp; data</button>
+          <button class="skills-tab" role="tab" aria-selected="false" aria-controls="tab-tools" id="tab-tools-trigger">Tools</button>
+        </div>
+
+        <div class="skill-group is-active" id="tab-design" role="tabpanel" aria-labelledby="tab-design-trigger">
           <div class="pill-row">
             <span class="pill">Functional Testing</span>
             <span class="pill">UI/UX Testing</span>
@@ -160,8 +162,7 @@
             <span class="pill">UML Diagrams</span>
           </div>
         </div>
-        <div class="skill-group reveal">
-          <h3>Platforms &amp; app types tested</h3>
+        <div class="skill-group" id="tab-platforms" role="tabpanel" aria-labelledby="tab-platforms-trigger" hidden>
           <div class="pill-row">
             <span class="pill">Web</span>
             <span class="pill">Mobile (Android/iOS)</span>
@@ -173,8 +174,7 @@
             <span class="pill">API-Based Apps</span>
           </div>
         </div>
-        <div class="skill-group reveal">
-          <h3>API, performance &amp; data</h3>
+        <div class="skill-group" id="tab-api" role="tabpanel" aria-labelledby="tab-api-trigger" hidden>
           <div class="pill-row">
             <span class="pill">Postman</span>
             <span class="pill">JMeter</span>
@@ -186,8 +186,7 @@
             <span class="pill">Cloudinary</span>
           </div>
         </div>
-        <div class="skill-group reveal">
-          <h3>Tools &amp; languages</h3>
+        <div class="skill-group" id="tab-tools" role="tabpanel" aria-labelledby="tab-tools-trigger" hidden>
           <div class="pill-row">
             <span class="pill">Jira</span>
             <span class="pill">Trello</span>
@@ -213,8 +212,13 @@
       <div class="timeline reveal">
         <div class="timeline-item">
           <div class="timeline-date">April 2025 — Present</div>
-          <div class="timeline-role">SQA Engineer</div>
-          <div class="timeline-company">Ropstam Solutions</div>
+          <div class="timeline-heading">
+            <div class="timeline-role">SQA Engineer</div>
+            <a class="timeline-company-link" href="https://www.ropstam.com/" target="_blank" rel="noopener noreferrer">
+              <span class="timeline-company">Ropstam Solutions</span>
+              <span class="timeline-company__icon" aria-hidden="true">↗</span>
+            </a>
+          </div>
           <ul>
             <li>Tested web and mobile apps, WordPress websites, and Shopify stores for client projects.</li>
             <li>Created detailed test cases and collaborated with cross-functional teams to ensure quality.</li>
@@ -223,8 +227,13 @@
         </div>
         <div class="timeline-item">
           <div class="timeline-date">November 2024 — March 2025</div>
-          <div class="timeline-role">SQA Intern</div>
-          <div class="timeline-company">Ropstam Solutions</div>
+          <div class="timeline-heading">
+            <div class="timeline-role">SQA Intern</div>
+            <a class="timeline-company-link" href="https://www.ropstam.com/" target="_blank" rel="noopener noreferrer">
+              <span class="timeline-company">Ropstam Solutions</span>
+              <span class="timeline-company__icon" aria-hidden="true">↗</span>
+            </a>
+          </div>
           <ul>
             <li>Learned and applied core manual testing concepts, QA processes, and defect-reporting practices.</li>
             <li>Assisted in UI/UX, functional, and regression testing of web and mobile applications.</li>
@@ -233,8 +242,13 @@
         </div>
         <div class="timeline-item">
           <div class="timeline-date">July 2023 — September 2023</div>
-          <div class="timeline-role">Front-End Intern</div>
-          <div class="timeline-company">Diligent Technologies</div>
+          <div class="timeline-heading">
+            <div class="timeline-role">Front-End Intern</div>
+            <a class="timeline-company-link" href="https://www.diligenttechnologies.co/" target="_blank" rel="noopener noreferrer">
+              <span class="timeline-company">Diligent Technologies</span>
+              <span class="timeline-company__icon" aria-hidden="true">↗</span>
+            </a>
+          </div>
           <ul>
             <li>Developed front-end interfaces using HTML and CSS.</li>
             <li>Used Figma and Adobe Photoshop to understand and visualize designs.</li>
